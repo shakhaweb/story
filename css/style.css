@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-HeavyItalic/Gilroy-HeavyItalic.woff2');
+}
+.active{
+    border-right: 2px solid #FFD302;
+}
+.categories{  
+    font-family: 'Gilroy';
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+    height: 200px;
+    margin: 10px auto; 
+    flex-wrap: wrap;
+}
+.div:hover p{
+    color: black;
+}
+.div:hover img{
+    filter: invert(0%);
+}
+.div:hover{
+    background-color: #FFD302;
+    cursor: pointer;
+}
+.div:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.div:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.div{
+    transition: all 0.3s ease;
+    height: 140px;
+    background-color:#19212E;
+    display: flex;
+    align-items: center;
+}
+.block{
+    width: 200px;
+    text-align: center;
+}
+.block img{
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
+
+.phones_card{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    font-style: unset;
+    width: 200px;
+    height: initial;
+    box-shadow: 0 0 10px  #19212E;
+    border-radius: 10px;
+    text-align: start;
+    overflow: hidden;
+    padding-left: 10px;
+    color: #19212E;
+    font-family: 'Sassy Frass', cursive;
+}
+.pro{
+    font-size: 30px;
+    font-weight: 800;
+}
+span{
+    display: flex;
+    gap: 10px;
+    color: gray;
+    font-size: 20px;
+}
+.card img{
+    width: 180px;
+    height: 180px;
+}
+.btn{
+    margin: 10px 25px;
+    padding: 10px 50px;
+    border: 2px solid #FFD302;
+    color: #19212E;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #19212E;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width:1000px) {
+    .categories{
+        width: fit-content;
+    }
+    .div:first-child{
+        border-radius: 0 0 0 0;
+    }
+    .div:last-child{
+        border-radius: 0 0 0 0;
+    }
+    .phones_card{
+       margin-top: 100px;
+       width: fit-content ;
+       flex-wrap: wrap;
+       gap: 10px;
+    }
+}
+@media(max-width:600px){
+    .categories{
+        width: fit-content;
+    }
+    .btn{
+        padding: 10px 30px;
+        margin: 10px 0px;
+    }
+    .card img{
+        width: 80px;
+        height: 80px;
+    }
+    .card{
+        width: 100px;
+    }
+    .phones_card{
+        width: fit-content;
+        margin-top: 250px;
+    }
+}
+@media(max-width:400px){
+    .categories{
+        width: fit-content;
+    }
+    .phones_card{
+        width: fit-content;
+        margin-top: 550px;
+    }
+}
+
